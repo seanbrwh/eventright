@@ -1,18 +1,43 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="center">    
+    <app-banner></app-banner>
+    <search-bar></search-bar>
+    <div class="event-page">
+      <event-page></event-page> 
+    </div>
   </div>
 </template>
 
 <script lang="ts">
+import AppBanner from '@/components/AppBanner.vue'
+import SearchBar from '@/components/SearchBar.vue'             
+import EventPage from '@/components/EventPage.vue'             
+    
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 @Component({
-  components: {
-    HelloWorld,
-  },
+  components:{
+    AppBanner,
+    SearchBar,
+    EventPage
+  }
 })
-export default class Home extends Vue {}
+  export default class Home extends Vue {
+  
+}
 </script>
+<style>
+  .center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .event-page{
+    position: absolute;
+    top: 35rem;
+    width: 100%;
+    height: 100vh;
+  }
+</style>
+
