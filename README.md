@@ -1,6 +1,9 @@
 # eventright
+
 ## An event planning web app
+
 ### Tech Used Vue, TypeScript, Node, postgreSQL, express
+
 #### Project setup Comile and hot reload for development
 ```
 yarn install
