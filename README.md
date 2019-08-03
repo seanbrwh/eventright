@@ -1,34 +1,30 @@
 # eventright
-
-## Project setup
+## An event planning web app
+### Tech Used Vue, TypeScript, Node, postgreSQL, express
+#### Project setup Comile and hot reload for development
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn run serve
 ```
-
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 yarn run build
 ```
 
-### Run your tests
+#### Run your tests
 ```
 yarn run test
 ```
 
-### Lints and fixes files
+#### Lints and fixes files
 ```
 yarn run lint
 ```
 
-### Run your unit tests
+#### Run your unit tests
 ```
 yarn run test:unit
 ```
 
-### Customize configuration
+#### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
